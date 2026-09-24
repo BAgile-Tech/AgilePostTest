@@ -1,0 +1,16 @@
+{
+  "name": "agile-networks-website",
+  "private": true,
+  "version": "3.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "node scripts/fetch-substack.mjs",
+    "build": "vite build",
+    "preview": "vite preview",
+    "refresh-substack": "node scripts/fetch-substack.mjs"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
